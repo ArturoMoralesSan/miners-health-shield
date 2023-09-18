@@ -1,4 +1,6 @@
 from django.urls import path
-from . import views
+from .views import graph_view
 
-urlpatterns = [] 
+urlpatterns = [
+    path('graph/', graph_view, name='graph'),
+] 
